@@ -461,7 +461,7 @@ class AsmX86(KeystoneAssembler):
             if ida_ida.inf_is_64bit():
                 mode = keystone.KS_MODE_64
                 self.MAX_PREVIEW_BYTES = 7
-            elif ida_ida.inf_is_64bit():
+            elif ida_ida.inf_is_32bit_exactly():
                 mode = keystone.KS_MODE_32
                 self.MAX_PREVIEW_BYTES = 6
             else:
